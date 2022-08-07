@@ -26,58 +26,49 @@ public class Main {
             System.out.println(" Android по ссылке");
         }
 
-    // PЗадание 3
+    // Задание 3
 
     int year = 2100;
     boolean leapYear = (year % 4 == 0 && year % 100 != 0 || year % 400 == 0);
-    //if (year % 4 == 0 && year % 100 != 0 || year % 400 == 0) {
     if (leapYear) {
         System.out.println("Это високосный год");
     } else {
         System.out.println("Это не високосный год");
     }
         // Задание 4
-    int deliveryDistance = 60;
-    int day  =  1;
-    int distance =  20;
-    if (deliveryDistance < distance) {
-        System.out.println("Потребуется дней: " + day);
+    int deliveryDistance = 95;
+    int day = 1;
+    int interval = 40;
+    int distance = 20;
+    if (deliveryDistance <= distance){
     } else {
-        day++;
-        distance += 40;
-        if (deliveryDistance < distance) {
-            System.out.println("Потребуется дней: " + day);
-        } else  {
-            day++;
-            distance += 40;
-            if (deliveryDistance < distance) ;
-            System.out.println("Потребуется дней: " + day);
-        }
+        day = day + (int) Math.ceil((deliveryDistance-distance)/ (double) interval);
     }
+        System.out.println("Потребуется дней: " + day);
 
 
-    //if (deliveryDistance >=  distanceMin  &&  deliveryDistance < distanceMax) {
-      //  System.out.println("Потребуется дней: " + day);
-        //} else {
-        //day = day + 1;
-        //distanceMin = distanceMin + 40;
-        //distanceMax = distanceMax + 40;
-        //if (deliveryDistance >= distanceMin && deliveryDistance < distanceMax) {
-          //  System.out.println("Потребуется дней: " + day);
-        //} else {
-          //  day = day + 1;
-           // distanceMin = distanceMin + 40;
-           // distanceMax = distanceMax + 40;
+    //if (deliveryDistance < distance) {
+    //    System.out.println("Потребуется дней: " + day);
+    //}else{
+    //    day++;
+   //     distance += 40;
+    //    System.out.println("Потребуется дней: " + day);
+   // }
 
-            //if (deliveryDistance >= distanceMin && deliveryDistance < distanceMax) {
-              //  System.out.println("Потребуется дней: " + day);
-            //} else {
-              //  day = day + 1;
-              //  distanceMin = distanceMin + 40;
-              //  distanceMax = distanceMax + 40;
-            //}
-       // }
-    //}
+
+
+        // day++;
+      //distance += 40;
+       // if (deliveryDistance < distance) {
+         //   System.out.println("Потребуется дней: " + day);
+        //} else  {
+          //  day++;
+           // distance += 40;
+           // if (deliveryDistance < distance) ;
+           // System.out.println("Потребуется дней: " + day);
+        //}
+   // }
+
 
 
         // задание 5
